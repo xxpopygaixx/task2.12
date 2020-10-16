@@ -66,6 +66,7 @@ namespace hac3
             {
                 Console.WriteLine($"{d.ToString()}({(int)d})-{count[d.ToString()]}");
             }
+            if (err.Count == 0) return;
             Console.WriteLine("Errors:");
             Console.WriteLine($"Not valid input strings: {string.Join(",",err)}");
 
